@@ -16,3 +16,17 @@ Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de
 
 Divirta-se
 
+```mermaid
+st=>start: Bobina Produzida
+e=>end: Bobina Pesada
+op1=>operation: Criar pallet vinc
+op2=>operation: Pesar bobina
+op3=>operation: Criar pallet desv.
+cond=>condition: Conforme?
+cond2=>condition: pallet vinc. criado?
+cond3=>condition: pallet desv. criado? 
+st->cond(yes, right)->cond2(no, bottom)->op1->e
+cond2(yes, right)->e
+st->cond(no, bottom)->cond3(no, bottom)->op3->e
+cond3(yes, right)->e
+```
