@@ -16,12 +16,3 @@ Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de
 
 Divirta-se
   
-```mermaid
-stateDiagram-v2
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-```
